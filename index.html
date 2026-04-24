@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A read on where AI actually fits in TravelMize's stack | Prepared for TravelMize</title>
+  <meta name="description" content="You're at an SMB booth at eMerge which means you are either raising, hunting LATAM logos, or both. A read on where the AI story usually breaks." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+</head>
+<body>
+<div data-eduba="banner" style="background:#0a0a0a;color:#f5f5f5;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;border-bottom:1px solid #1f1f1f;position:relative;z-index:1000;">
+  <a href="https://eduba.io" target="_blank" rel="noopener" style="color:#f5f5f5;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-0.02em;line-height:1;">eduba</a>
+  <span style="opacity:0.88;">Prepared by Eduba for TravelMize &mdash; Emerge Americas 2026</span>
+</div>
+
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo-wrap">
+        <img src="logo.svg" alt="TravelMize" width="36" height="36" />
+        <span class="wordmark">TravelMize</span>
+      </div>
+      <span class="prepared">Prepared for eMerge Americas 2026</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">For TravelMize</span>
+    <h1>A read on where AI actually fits in TravelMize's stack</h1>
+    <p class="hero-sub">Every travel-tech team in 2026 is answering the same question from prospects and investors: what is your AI story. The honest answer is usually that parts of the product genuinely need a language model, most parts do not, and nobody has drawn the line clearly.</p>
+  </section>
+
+  <article class="pitch">
+
+    <p><strong>That line is the work.</strong></p>
+
+    <p>Eduba runs a frame we call 60/30/10. Roughly 60% of most products is traditional code and database work. 30% is rule-based logic that a language model handles worse than a decision tree. 10% is actually an AI problem, and that 10% is where you should be spending model budget, evaluation time, and engineering attention. Teams who skip this distinction end up with GPT in the search bar, a chatbot that cannot close a booking, and a product story that collapses in due diligence.</p>
+
+    <div class="framework" aria-label="The 60/30/10 frame">
+      <div class="framework-card">
+        <div class="num">60%</div>
+        <div class="label">Traditional code</div>
+        <div class="desc">Booking engine, supplier inventory, reconciliation logic. Postgres work.</div>
+      </div>
+      <div class="framework-card">
+        <div class="num">30%</div>
+        <div class="label">Rule-based logic</div>
+        <div class="desc">Pricing rules, policy enforcement, itinerary templating. Decision trees beat LLMs here.</div>
+      </div>
+      <div class="framework-card highlight">
+        <div class="num">10%</div>
+        <div class="label">Actually AI</div>
+        <div class="desc">Freeform client preferences, long-context itinerary assembly, supplier communication parsing.</div>
+      </div>
+    </div>
+
+    <p>Applied to a travel-tech product like TravelMize, the 60/30/10 read usually looks like this. The booking engine, the supplier inventory database, and the reconciliation logic belong in the 60. Pricing rules, policy enforcement, and itinerary templating belong in the 30. Freeform client preferences, long-context itinerary assembly, and supplier communication parsing belong in the 10. The result of drawing the line is a product roadmap that a technical buyer believes and a demo that holds up when someone pokes at it.</p>
+
+    <h2>The nearest precedent</h2>
+    <p>The closest match in our case library is Simple Lyfe Stays, a 46-property short-term rental operator. Same shape of problem: multi-unit, ops-heavy, small team, customers running parts of the workflow in email. We packaged the work as a scoped sprint where the operator chose depth over breadth. The deliverable was an orchestration layer and a playbook the team could run without us. That is the right template for TravelMize if the booth conversation confirms the hypothesis.</p>
+
+    <h2>The method is published</h2>
+    <p>Interpretable Context Methodology: Folder Structure as Agent Architecture, submitted to ACM TiiS. Short version: you can organize agent context as a layered filesystem and measure the interpretability gains. Paper and repo live at <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>. Jake wrote it. Jake, the CEO, is an Edinburgh MSc and a Marine Corps veteran of eight years on cryptographic and avionics systems. 1,500+ people trained across enterprise engagements since May 2025. That is the credibility anchor.</p>
+
+    <div class="callout">
+      <p style="margin:0"><strong>Scope honesty.</strong> Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If what you actually need is a production ML pipeline or a data platform rebuild, Matt will say so and make the introduction.</p>
+    </div>
+
+  </article>
+
+  <section class="cta">
+    <div class="cta-card">
+      <h3>30 minutes with Matt Creamer, Eduba's CRO</h3>
+      <p>Bring one workflow from your product that you are not sure belongs at the AI layer. We do a live read on the layer it actually belongs at. If it is a fit for a scoped sprint, we scope it. If it is not, you leave with a frame you can use tomorrow.</p>
+      <a class="cta-button" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" aria-label="Book 30 minutes with Matt Creamer on Calendly">
+        Book 30 minutes with Matt
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+      <p class="cta-meta">Matt Creamer, Chief Revenue Officer, Eduba.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a> &middot; <a href="https://eduba.io/works" target="_blank" rel="noopener">More case studies</a></p>
+  </footer>
+
+<footer data-eduba="footer" style="background:#0a0a0a;color:#dcdcdc;padding:36px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;border-top:1px solid #1f1f1f;margin-top:48px;">
+  <div style="max-width:1040px;margin:0 auto;">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;">
+      <div style="min-width:240px;flex:1;">
+        <div style="margin-bottom:6px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#ffffff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-0.02em;">eduba</a></div>
+        <div style="opacity:0.85;margin-bottom:4px;">Van Clief Media LLC, dba Eduba</div>
+        <div style="opacity:0.7;">Veteran-owned AI consulting and training firm</div>
+      </div>
+      <div style="min-width:220px;flex:1;">
+        <div style="color:#ffffff;font-weight:600;margin-bottom:2px;">Matt Creamer, CRO</div>
+        <div style="margin-bottom:10px;"><a href="mailto:thecro@eduba.io" style="color:#dcdcdc;text-decoration:underline;">thecro@eduba.io</a></div>
+        <div style="opacity:0.85;">Founder: Jake Van Clief</div>
+      </div>
+      <div style="min-width:180px;flex:1;">
+        <div style="margin-bottom:4px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#dcdcdc;text-decoration:underline;">eduba.io</a></div>
+        <div style="opacity:0.85;">Palm Coast, FL</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid #1f1f1f;opacity:0.62;font-size:12px;line-height:1.55;">
+      This site was custom-built by Eduba as a conference pitch. It is not affiliated with or operated by TravelMize.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
